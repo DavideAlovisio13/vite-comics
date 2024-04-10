@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <img :src="content.img" :alt="content.alt">
+    <div class="mx-3 cardshop">
+        <div class="img-cont">
+            <img :src="content.img" :alt="content.alt">
+        </div>
         <h5>{{ content.title }}</h5>
     </div>
 </template>
@@ -21,18 +23,26 @@
 @use "../assets/styles/partials/_variables.scss" as *;
 
 // topfooter style
-div {
+.cardshop {
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 20px 0;
-    img {
-        width: 70px;
-    }
     h5 {
         color: $main-white-color;
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: 0.8em;
+    }
+    // img container
+    .img-cont {
+        width: 70px;
+        height: 70px;
+        // img style
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
 
