@@ -28,7 +28,8 @@ export default {
     text-transform: uppercase;
     color: $main-white-color;
     font-size: 1.5rem;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
   }
   li {
     margin-top: 10px;

@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <div class="logoheader">
-        <img src="/public/images/dc-logo.png" alt="dclogo" />
+        <img src="/public/images/dc-logo.png" alt="dclogo" class="rotate-x-infinite" />
       </div>
       <div role="navigation" class="menubar">
         <ul>
@@ -67,6 +67,7 @@ header {
         text-transform: uppercase;
         cursor: pointer;
         position: relative;
+        margin: auto 0;
 
         &::after {
           content: "";
@@ -88,5 +89,18 @@ header {
       }
     }
   }
+}
+
+@keyframes rotateX {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.rotate-x-infinite {
+  animation: rotateX 4s linear infinite;
 }
 </style>

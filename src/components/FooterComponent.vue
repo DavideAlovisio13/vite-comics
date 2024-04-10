@@ -29,15 +29,15 @@
   <div role="footer" class=" footers bg-dark-footer">
     <div class="container" id="footerBottom">
       <div class="d-flex justify-content-center align-items-center">
-        <button type="button" class="btn btn-outline-primary text-white p-2">
-          SIGN-UP NOW!
+        <button type="button" class="btn btn-outline-primary text-white p-2 rounded-0 p-3 text-uppercase fw-bolder ">
+          Sign-up now!
         </button>
       </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <h4 class="px-2">follow us</h4>
+      <div class="d-flex justify-content-between align-items-center text-uppercase">
+        <div class="text-center">
+          <h4 class="px-2 my-auto blu-logo fw-bolder">follow us</h4>
         </div>
-        <div>
+        <div class="d-flex justify-content-center align-items-center">
           <img
             src="/public/images/footer-facebook.png"
             alt="facebook"
@@ -203,5 +203,9 @@ export default {
 
 .ptpb-30 {
   margin: -30px 0;
+}
+
+.blu-logo {
+  color: $logo-header-bg-color;
 }
 </style>
