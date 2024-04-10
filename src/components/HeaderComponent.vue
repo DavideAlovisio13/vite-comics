@@ -1,5 +1,5 @@
 <template>
-  <header class="debug">
+  <header>
     <div class="container">
       <div class="logoheader">
         <img src="/public/images/dc-logo.png" alt="dclogo" />
@@ -54,18 +54,37 @@ header {
 
   // menubar
   .menubar {
+    display: flex;
+    align-items: center;
     ul {
       display: flex;
-      align-items: center;
-      justify-content: center;
       gap: 10px;
       li {
         list-style: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
         color: $main-black-bg;
         text-transform: uppercase;
         cursor: pointer;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -58px;
+          left: 0;
+          width: 100%;
+          height: 5px;
+          background-color: $logo-header-bg-color;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
       }
     }
   }
