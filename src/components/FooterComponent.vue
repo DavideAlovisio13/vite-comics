@@ -1,14 +1,20 @@
 <template>
-    <footer class="debug">
+    <div role="footer" class="debug footers">
         <div class="container" id="footerTop">
             <TopFooterComponent v-for="(item, index) in content" :key="index" :content="item"/>
         </div>
+    </div>
+    <div role="footer" class="debug footers">
         <div class="container footerCenter" >
-            <CenterFooterComponent v-for="(item, index) in list" :key="index" :list="item"/>
+            <div class="w-50 d-flex flex-wrap p-6 fs-5">
+                <CenterFooterComponent v-for="(item, index) in list" :key="index" :list="item"/>
+            </div>
             <div class="w-50">
                 <img src="/public/images/dc-logo-bg.png" alt="dc-footer-logo">
             </div>
         </div>
+    </div>
+    <div role="footer" class="debug footers">
         <div class="container" id="footerBottom">
             <div class="d-flex justify-content-center align-items-center">
                 <button type="button" class="btn btn-outline-primary text-white">SIGN-UP NOW!</button>
@@ -26,7 +32,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 </template>
 
 <script>
@@ -82,13 +88,6 @@ import TopFooterComponent from './TopFooterComponent.vue';
                         ],
                     },
                     {
-                        listtiltle: 'Shop',
-                        listitem: [
-                            'Shop DC',
-                            'Shop DC Collectibles'
-                        ],
-                    },
-                    {
                         listtiltle: 'Dc',
                         listitem: [
                             'Terms Of Use',
@@ -114,6 +113,13 @@ import TopFooterComponent from './TopFooterComponent.vue';
                             'DC Power Visa'
                         ],
                     },
+                    {
+                        listtiltle: 'Shop',
+                        listitem: [
+                            'Shop DC',
+                            'Shop DC Collectibles'
+                        ],
+                    },
                 ]
             }
         }
@@ -123,7 +129,7 @@ import TopFooterComponent from './TopFooterComponent.vue';
 <style lang="scss" scoped>
 @use "../assets/styles/partials/_variables.scss" as *;
 // footer style
-footer {
+.footers {
     width: 100%;
     background-color: $top-footer-bg-color;
 
@@ -135,8 +141,10 @@ footer {
 
         // footerCenter style
         .footerCenter {
-            background-image: url('/public/images/footer-bg.jpg');
+            background-image: url('/public/images/dc-logo-bg.png');
             background-size: contain;
+
+            // img style
             img {
                 width: 100%;
                 height: 100%;

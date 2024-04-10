@@ -26,7 +26,7 @@ main {
         // content
         h1 {
             color: $main-white-color;
-             ;
+            ;
         }
     }
 }

@@ -1,12 +1,10 @@
 <template>
-  <div class="w-50 d-flex justify-content-center">
-    <div class="listitems">
+    <div class="listitems d-flex justify-content-center">
       <ul>
         <h5>{{ list.listtiltle }}</h5>
         <li v-for="(item, index) in list.listitem" :key="index">{{ item }}</li>
       </ul>
     </div>
-  </div>
 </template>
 
 <script>
@@ -25,11 +23,11 @@ export default {
 @use "../assets/styles/partials/_variables.scss" as *;
 // listitems style
 .listitems {
-    
+
   h5 {
     text-transform: uppercase;
     color: $main-white-color;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
   li {
     list-style: none;
