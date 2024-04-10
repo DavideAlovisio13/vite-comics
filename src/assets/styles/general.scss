@@ -11,10 +11,21 @@ $fa-font-path: '../fonts/webfonts';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+// reset
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// general
 body {
     font-family: $basefont;
 }
 
-h1 {
-    color: $color-gray-200;
+// utilities
+.debug {
+    border: 1px solid red;
 }
+
+
