@@ -1,10 +1,10 @@
 <template>
-    <div role="footer" class="debug footers">
+    <div role="footer" class="debug footers bg-blue-footer">
         <div class="container" id="footerTop">
             <TopFooterComponent v-for="(item, index) in content" :key="index" :content="item"/>
         </div>
     </div>
-    <div role="footer" class="debug footers">
+    <div role="footer" class="debug footers bg-footer">
         <div class="container footerCenter" >
             <div class="w-50 d-flex flex-wrap p-6 fs-5">
                 <CenterFooterComponent v-for="(item, index) in list" :key="index" :list="item"/>
@@ -14,7 +14,7 @@
             </div>
         </div>
     </div>
-    <div role="footer" class="debug footers">
+    <div role="footer" class="debug footers bg-dark-footer">
         <div class="container" id="footerBottom">
             <div class="d-flex justify-content-center align-items-center">
                 <button type="button" class="btn btn-outline-primary text-white">SIGN-UP NOW!</button>
@@ -131,8 +131,7 @@ import TopFooterComponent from './TopFooterComponent.vue';
 // footer style
 .footers {
     width: 100%;
-    background-color: $top-footer-bg-color;
-
+    color: $main-white-color;
     // container
     .container {
         display: flex;
@@ -141,13 +140,12 @@ import TopFooterComponent from './TopFooterComponent.vue';
 
         // footerCenter style
         .footerCenter {
-            background-image: url('/public/images/dc-logo-bg.png');
-            background-size: contain;
+            width: 100%;
 
             // img style
             img {
-                width: 100%;
-                height: 100%;
+                width: 300px;
+                height: 300px;
                 object-fit: cover;
             }
         }
@@ -158,5 +156,19 @@ import TopFooterComponent from './TopFooterComponent.vue';
             justify-content: space-between;
         }
     }
+}
+
+// utility classes
+.bg-footer {
+    background-image: url("/public/images/footer-bg.jpg");
+    background-size: contain;
+}
+
+.bg-blue-footer {
+    background-color: $logo-header-bg-color;
+}
+
+.bg-dark-footer {
+    background-color: $bottom-footer-bg-color;
 }
 </style>

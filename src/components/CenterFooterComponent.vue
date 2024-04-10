@@ -28,8 +28,12 @@ export default {
     text-transform: uppercase;
     color: $main-white-color;
     font-size: 1.5rem;
+    padding-bottom: 20px;
   }
   li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
     list-style: none;
   }
 }
