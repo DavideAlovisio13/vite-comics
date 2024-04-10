@@ -1,13 +1,20 @@
 <template>
-  <div>
-    <h1 class="text-center">La Molisana</h1>
-    <i class="fas fa-spinner fa-pulse"></i>
-  </div>
+  <HeaderComponent />
+  <MainComponent />
+  <FooterComponent />
 </template>
 
 <script>
+import HeaderComponent from './components/HeaderComponent.vue'
+import MainComponent from './components/MainComponent.vue'
+import FooterComponent from './components/FooterComponent.vue'
   export default {
     name: 'App',
+    components: {
+      HeaderComponent,
+      MainComponent,
+      FooterComponent
+    }
   }
 </script>
 
