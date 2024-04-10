@@ -48,6 +48,53 @@ import TopFooterComponent from './TopFooterComponent.vue';
                         alt: 'digitalcomics'
                     }
 
+                ],
+                list: [
+                    {
+                        listtiltle: 'Dc comics',
+                        listitem: [
+                            'Characters',
+                            'Comics',
+                            'Movies',
+                            'Tv',
+                            'Games',
+                            'Videos',
+                            'News'
+                        ],
+                    },
+                    {
+                        listtiltle: 'Shop',
+                        listitem: [
+                            'Shop DC',
+                            'Shop DC Collectibles'
+                        ],
+                    },
+                    {
+                        listtiltle: 'Dc',
+                        listitem: [
+                            'Terms Of Use',
+                            'Privacy policy (New)',
+                            'Ad Choices',
+                            'Advertising',
+                            'Jobs',
+                            'Subscriptions',
+                            'Talent Workshops',
+                            'CPSC Certificates',
+                            'Ratings',
+                            'Shop Help',
+                            'Contact Us'
+                        ],
+                    },
+                    {
+                        listtiltle: 'Sites',
+                        listitem: [
+                            'DC',
+                            'MAD Magazine',
+                            'DC Kids',
+                            'DC Universe',
+                            'DC Power Visa'
+                        ],
+                    },
                 ]
             }
         }
@@ -65,6 +112,13 @@ footer {
     .container {
         display: flex;
         justify-content: space-between;
+        padding: 30px 0;
+
+        // #footerCenter style
+        #footerCenter {
+            background-image: url(/public/images/footer-bg.jpg);
+            background-size: cover;
+        }
     }
 }
 </style>
