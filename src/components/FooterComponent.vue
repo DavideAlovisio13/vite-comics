@@ -3,21 +3,40 @@
         <div class="container" id="footerTop">
             <TopFooterComponent v-for="(item, index) in content" :key="index" :content="item"/>
         </div>
-        <div class="container" id="footerCenter">
-            footerCenter
+        <div class="container footerCenter" >
+            <CenterFooterComponent v-for="(item, index) in list" :key="index" :list="item"/>
+            <div class="w-50">
+                <img src="/public/images/dc-logo-bg.png" alt="dc-footer-logo">
+            </div>
         </div>
         <div class="container" id="footerBottom">
-            footerBottom
+            <div class="d-flex justify-content-center align-items-center">
+                <button type="button" class="btn btn-outline-primary text-white">SIGN-UP NOW!</button>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h4 class="px-2">follow us</h4>
+                </div>
+                <div>
+                    <img src="/public/images/footer-facebook.png" alt="facebook" class="px-2">
+                    <img src="/public/images/footer-twitter.png" alt="twitter"  class="px-2">
+                    <img src="/public/images/footer-youtube.png" alt="youtube"  class="px-2">
+                    <img src="/public/images/footer-pinterest.png" alt="pinterest" class="px-2">
+                    <img src="/public/images/footer-periscope.png" alt="periscope"  class="px-2">
+                </div>
+            </div>
         </div>
     </footer>
 </template>
 
 <script>
+import CenterFooterComponent from './CenterFooterComponent.vue';
 import TopFooterComponent from './TopFooterComponent.vue';
     export default {
         name: 'FooterComponent',
         components: {
-            TopFooterComponent
+            TopFooterComponent,
+            CenterFooterComponent
         },
         data() {
             return {
@@ -114,10 +133,21 @@ footer {
         justify-content: space-between;
         padding: 30px 0;
 
-        // #footerCenter style
-        #footerCenter {
-            background-image: url(/public/images/footer-bg.jpg);
-            background-size: cover;
+        // footerCenter style
+        .footerCenter {
+            background-image: url('/public/images/footer-bg.jpg');
+            background-size: contain;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        // #footerBottom style
+        #footerBottom {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
