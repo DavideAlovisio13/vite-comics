@@ -17,6 +17,6 @@
     background-image: url("/public/images/jumbotron.jpg");
     opacity: 0.8;
     background-size: cover;
-    height: 400px;
+    height: 600px;
 }
 </style>
