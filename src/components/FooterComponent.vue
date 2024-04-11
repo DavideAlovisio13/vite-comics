@@ -184,7 +184,7 @@ export default {
 // utility classes
 .bg-footer {
   background-image: url("/public/images/footer-bg.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-blue-footer {
