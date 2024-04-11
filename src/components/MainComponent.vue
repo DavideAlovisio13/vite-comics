@@ -17,7 +17,7 @@ import {comics} from './data/store.js';
     export default {
         name: 'MainComponent',
         components: {
-            CardComponent
+            CardComponent,
         },
     data() {
         return {

@@ -38,5 +38,9 @@ export default {
     font-size: 0.8em;
     list-style: none;
   }
+
+  li:hover {
+    text-decoration: underline;
+  }
 }
 </style>

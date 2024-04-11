@@ -1,5 +1,5 @@
 <template>
-  <div role="footer" class=" footers bg-blue-footer">
+  <div role="footer" class="footers bg-blue-footer">
     <div class="container" id="footerTop">
       <TopFooterComponent
         v-for="(item, index) in content"
@@ -8,7 +8,7 @@
       />
     </div>
   </div>
-  <div role="footer" class=" footers bg-footer">
+  <div role="footer" class="footers bg-footer">
     <div class="container footerCenter">
       <div class="w-50 d-flex flex-wrap p-6 fs-5">
         <CenterFooterComponent
@@ -26,42 +26,48 @@
       </div>
     </div>
   </div>
-  <div role="footer" class=" footers bg-dark-footer">
+  <div role="footer" class="footers bg-dark-footer">
     <div class="container" id="footerBottom">
       <div class="d-flex justify-content-center align-items-center">
-        <button type="button" class="btn btn-outline-primary text-white p-2 rounded-0 p-3 text-uppercase fw-bolder ">
+        <button
+          type="button"
+          class="btn btn-outline-primary text-white p-2 rounded-0 p-3 text-uppercase fw-bolder"
+        >
           Sign-up now!
         </button>
       </div>
-      <div class="d-flex justify-content-between align-items-center text-uppercase">
+      <div
+        class="d-flex justify-content-between align-items-center text-uppercase"
+      >
         <div class="text-center animate__animated animate__fadeInUp">
           <h4 class="px-2 my-auto blu-logo fw-bolder">follow us</h4>
         </div>
-        <div class="d-flex justify-content-center align-items-center animate__animated animate__fadeInUp">
+        <div
+          class="d-flex justify-content-center align-items-center animate__animated animate__fadeInUp">
           <img
             src="/public/images/footer-facebook.png"
             alt="facebook"
-            class="px-2"
+            class="px-2 cursorF animate__animated"
           />
           <img
             src="/public/images/footer-twitter.png"
             alt="twitter"
-            class="px-2"
+            class="px-2 cursorF animate__animated"
           />
           <img
             src="/public/images/footer-youtube.png"
             alt="youtube"
-            class="px-2"
+            class="px-2 cursorF animate__animated"
           />
           <img
             src="/public/images/footer-pinterest.png"
             alt="pinterest"
-            class="px-2"
+            class="px-2 cursorF animate__animated"
           />
           <img
             src="/public/images/footer-periscope.png"
             alt="periscope"
-            class="px-2"
+            class="px-2 cursorF animate__animated"
           />
         </div>
       </div>
@@ -207,5 +213,9 @@ export default {
 
 .blu-logo {
   color: $logo-header-bg-color;
+}
+
+.cursorF {
+  cursor: pointer;
 }
 </style>
