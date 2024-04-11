@@ -1,5 +1,5 @@
 <template>
-  <header class="position-fixed z-3">
+  <header class="position-fixed z-3 top-0 shadow-lg">
     <div class="container animate__animated animate__fadeInDown">
       <div class="logoheader">
         <img
