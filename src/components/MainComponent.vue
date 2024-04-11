@@ -1,7 +1,7 @@
 <template>
     <main>
-        <div class="container">
-            <h1> Content here </h1>
+        <div class="container animate__animated animate__fadeInDown">
+            <h1 class="container animate__animated animate__fadeInUp"> Content here </h1>
         </div>
     </main>
 </template>

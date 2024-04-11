@@ -1,5 +1,5 @@
 <template>
-    <div class="listitems d-flex justify-content-center">
+    <div class="listitems d-flex justify-content-center animate__animated animate__fadeInLeft">
       <ul>
         <h5>{{ list.listtiltle }}</h5>
         <li v-for="(item, index) in list.listitem" :key="index">{{ item }}</li>
@@ -32,6 +32,7 @@ export default {
     font-weight: bold;
   }
   li {
+    cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 0.8em;

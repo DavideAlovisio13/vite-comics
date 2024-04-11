@@ -1,6 +1,6 @@
 <template>
     <div class="mx-3 cardshop">
-        <div class="img-cont">
+        <div class="img-cont animate__animated animate__fadeInUp">
             <img :src="content.img" :alt="content.alt">
         </div>
         <h5>{{ content.title }}</h5>
@@ -24,6 +24,7 @@
 
 // topfooter style
 .cardshop {
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 20px;

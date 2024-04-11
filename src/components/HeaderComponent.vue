@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container">
+    <div class="container animate__animated animate__fadeInDown">
       <div class="logoheader">
         <img src="/public/images/dc-logo.png" alt="dclogo" class="rotate-x-infinite" />
       </div>

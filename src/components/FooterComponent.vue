@@ -17,7 +17,7 @@
           :list="item"
         />
       </div>
-      <div class="w-50 ptpb-30">
+      <div class="w-50 ptpb-30 animate__animated animate__fadeInRight">
         <img
           src="/public/images/dc-logo-bg.png"
           alt="dc-footer-logo"
@@ -34,10 +34,10 @@
         </button>
       </div>
       <div class="d-flex justify-content-between align-items-center text-uppercase">
-        <div class="text-center">
+        <div class="text-center animate__animated animate__fadeInUp">
           <h4 class="px-2 my-auto blu-logo fw-bolder">follow us</h4>
         </div>
-        <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center animate__animated animate__fadeInUp">
           <img
             src="/public/images/footer-facebook.png"
             alt="facebook"
