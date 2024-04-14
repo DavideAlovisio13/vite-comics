@@ -19,7 +19,7 @@ mounted() {
     const material = new THREE.MeshPhongMaterial({ color: 0x0C7CEC, transparent: true, opacity: 0.8 });
     const sphere = new THREE.Mesh(geometry, material);
     scene.add(sphere);
-    const light = new THREE.DirectionalLight(0xffffff, 1);
+    const light = new THREE.DirectionalLight(0xffffff, 10);
     light.position.set(1, 1, 1).normalize();
     scene.add(light);
     const animate = function () {
@@ -41,9 +41,9 @@ mounted() {
         const height = window.innerHeight;
         renderer.setSize(width, height);
         camera.aspect = width / height;
-        camera.updateProjectionMatrix();
+        camera.updateProjectionMatrix();// utilizzata per proiettare correttamente
     });
-
+    
 }
 };
 </script>
